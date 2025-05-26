@@ -4,6 +4,8 @@
 <p>{{ $note->content }}</p>
 
 <a href="/index">return</a>
+<br>
+<a href="index/{{ $note->id }}/edit">edit</a>
 
 <br>
 <br>

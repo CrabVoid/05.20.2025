@@ -9,7 +9,7 @@
             <br>
             {{ $note->content }}
             <br>
-            <a href="/index/{{ $note->id }}">show</a>
+            <a href="index/{{ $note->id }}">show</a>
     
        @endforeach
     </ul>

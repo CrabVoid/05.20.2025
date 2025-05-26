@@ -11,4 +11,7 @@ Route::get('/index', [NoteController::class , 'index']);
 Route::get('/create', [NoteController::class , 'create']);
 Route::post('/index', [NoteController::class , 'store']);
 Route::get('/index/{id}', [NoteController::class, 'show']);
-Route::delete('/index/{id}', [NoteController::class, 'destroy'])->name('notes.destroy');
+Route::post('/index/{id}', [NoteController::class, 'destroy'])->name('notes.destroy');
+Route::get('/index/{id}/edit',[NoteController::class, 'edit'])->name('notes.edit');
+Route::put('/index/{id}',[NoteController::class, 'update'])->name('notes.update');
+
